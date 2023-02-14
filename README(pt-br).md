@@ -28,12 +28,12 @@ Através de uma integração entre *Banco de Dados Relacional*(**MySQL**) e *Jan
 ## Diário do Projeto 📝
 
 ### Dia 1
--[] Criação do Banco de Dados e das Tabelas Principais
+- [] Criação do Banco de Dados e das Tabelas Principais
     - Tabela Cliente
     - Tabela Usuário
     - Tabela Serviços
     - Tabela Cliente-Serviço
--[] Criação do Projeto C#
+- [] Criação do Projeto C#
     - Janela Principal
     - Janela Cadastro
         - Aba Cliente
