@@ -34,11 +34,13 @@ namespace project_hospital
             this.btnRegisterUser = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnRegisterClient = new System.Windows.Forms.Button();
+            this.btnAppointment = new System.Windows.Forms.Button();
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
             // 
+            this.panel.Controls.Add(this.btnAppointment);
             this.panel.Controls.Add(this.btnRegisterClient);
             this.panel.Controls.Add(this.btnRegisterUser);
             this.panel.Controls.Add(this.lblTitle);
@@ -86,6 +88,17 @@ namespace project_hospital
             this.btnRegisterClient.Text = "Cadastrar Cliente";
             this.btnRegisterClient.UseVisualStyleBackColor = true;
             // 
+            // btnAppointment
+            // 
+            this.btnAppointment.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAppointment.Location = new System.Drawing.Point(169, 239);
+            this.btnAppointment.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAppointment.Name = "btnAppointment";
+            this.btnAppointment.Size = new System.Drawing.Size(192, 28);
+            this.btnAppointment.TabIndex = 3;
+            this.btnAppointment.Text = "Agendar Serviço";
+            this.btnAppointment.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -108,6 +121,7 @@ namespace project_hospital
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnRegisterUser;
         private System.Windows.Forms.Button btnRegisterClient;
+        private System.Windows.Forms.Button btnAppointment;
     }
 }
 
