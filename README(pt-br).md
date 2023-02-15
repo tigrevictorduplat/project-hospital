@@ -66,9 +66,9 @@ Descrição Serviço | VARCHAR(45) | ---
     - [X] Tabela Usuário
     - [X] Tabela Serviços
     - [X] Tabela Agendamento (Cliente-Serviço)
-- [ ] Criação do Projeto C#
+- [X] Criação do Projeto C#
     - [X] Janela Principal
     - [X] Janela Cadastro
         - [X] Aba Cliente
         - [X] Aba Usuário
-    - Janela Agendamento
+    - [X] Janela Agendamento
