@@ -18,21 +18,54 @@ Através de uma integração entre *Banco de Dados Relacional*(**MySQL**) e *Jan
 ## Descrição 🖊️
 
 ### Tabela Cliente
+Tabela que guarda as informações dos eventuais clientes (no caso, pacientes) do Hospital.
+
+Campo | Tipo do Dado | +
+---|---|---
+⭐CPF| VARCHAR(11) | Chave Primária
+Nome Cliente | VARCHAR(45) |---
+Data de Registro | DATE TIME | ---
+Plano de Saúde | VARCHAR(45) | Poder ser nulo
 
 ### Tabela Usuário
+Tabela que guarda as informações dos possívei usuários (médicos, pacientes recorrentes, empresas ou beneficiários) do Hospital.
+
+Campo | Tipo do Dado | +
+---|---|---
+⭐ID | INT | Chave Primária (Auto Incremento)
+Nome Usuário | VARCHAR(45) |---
+Senha | VARCHAR(45) | ---
+Data de Registro | DATE TIME | ---
+Tipo de Usuário | VARCHAR(45) | ---
 
 ### Tabela Serviços
+Tabela que guarda as informações dos serviços disponíveis (Exames, Consultas, Laboratório, Pronto-Socorro) do Hospital.
 
-### Relacionamento Ciente-Serviço
+Campo | Tipo do Dado | +
+---|---|---
+⭐ID | INT | Chave Primária (Auto Incremento)
+Nome Serviço | VARCHAR(45) |---
+Descrição Serviço | VARCHAR(45) | ---
+Preço do Serviço |DOUBLE(6,2) | (Default = 0.00)
 
+### Relacionamento Ciente-Serviço (Tabela Agendamento)
+Campo | Tipo do Dado | +
+---|---|---
+⭐ID | INT | Chave Primária (Auto Incremento)
+Data do Agendamento | DATE TIME |---
+Descrição Serviço | VARCHAR(45) | ---
+🔑 ID Cliente | VARCHAR(11) | Chave Estrangeira
+🔑 ID Serviço | INT | Chave Estrangeira
+
+***
 ## Diário do Projeto 📝
 
 ### Dia 1
 - [ ] Criação do Banco de Dados e das Tabelas Principais
-    - Tabela Cliente
-    - Tabela Usuário
-    - Tabela Serviços
-    - Tabela Cliente-Serviço
+    - [X] Tabela Cliente
+    - [X] Tabela Usuário
+    - [X] Tabela Serviços
+    - [X] Tabela Agendamento (Cliente-Serviço)
 - [ ] Criação do Projeto C#
     - Janela Principal
     - Janela Cadastro
