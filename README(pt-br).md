@@ -61,14 +61,14 @@ Descrição Serviço | VARCHAR(45) | ---
 ## Diário do Projeto 📝
 
 ### Dia 1
-- [ ] Criação do Banco de Dados e das Tabelas Principais
+- [X] Criação do Banco de Dados e das Tabelas Principais
     - [X] Tabela Cliente
     - [X] Tabela Usuário
     - [X] Tabela Serviços
     - [X] Tabela Agendamento (Cliente-Serviço)
 - [ ] Criação do Projeto C#
-    - Janela Principal
-    - Janela Cadastro
-        - Aba Cliente
-        - Aba Usuário
+    - [X] Janela Principal
+    - [X] Janela Cadastro
+        - [X] Aba Cliente
+        - [X] Aba Usuário
     - Janela Agendamento
