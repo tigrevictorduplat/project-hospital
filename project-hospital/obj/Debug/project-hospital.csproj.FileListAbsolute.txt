@@ -1,0 +1,12 @@
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\bin\Debug\project-hospital.exe.config
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\bin\Debug\project-hospital.exe
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\bin\Debug\project-hospital.pdb
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.csproj.AssemblyReference.cache
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project_hospital.AppointmentForm.resources
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project_hospital.ClientRegisterForm.resources
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project_hospital.MainForm.resources
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project_hospital.Properties.Resources.resources
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.csproj.GenerateResource.cache
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.exe
+C:\Users\aluno\Documents\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.pdb
