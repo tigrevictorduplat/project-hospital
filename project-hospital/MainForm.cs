@@ -8,42 +8,81 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 
 namespace project_hospital
 {
     public partial class MainForm : Form
     {
-        Thread th;
-
+        private IconButton currentButton;
+        private Panel leftBorderPanel;
         public MainForm()
         {
             InitializeComponent();
+            leftBorderPanel = new Panel();
+            leftBorderPanel.Size = new Size(6, 60);
+            panelSideBar.Controls.Add(leftBorderPanel);
         }
 
-        public void runAppointment()
+        private void ActivateButton(object senderBtn)
         {
-            Application.Run( new AppointmentForm());
+            if (senderBtn != null)
+            {
+                DisableButton();
+                Color activecolor = Color.FromArgb(81, 1, 23);
+                //Changing Button
+                currentButton = (IconButton)senderBtn;
+                currentButton.BackColor = Color.FromArgb(251, 229, 232);
+                currentButton.ForeColor = activecolor;
+                currentButton.TextAlign = ContentAlignment.MiddleCenter;
+                currentButton.IconColor = activecolor;
+                currentButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+                currentButton.ImageAlign = ContentAlignment.MiddleRight;
+                //Changing Left Border
+                leftBorderPanel.BackColor = activecolor;
+                leftBorderPanel.Location = new Point(0, currentButton.Location.Y);
+                leftBorderPanel.Visible = true;
+                leftBorderPanel.BringToFront();
+            }
         }
-        public void runClientRegister()
+        private void DisableButton()
         {
-            Application.Run(new ClientRegisterForm());
-                        
+            if (currentButton != null)
+            {
+                //Returning Button
+                currentButton.BackColor = Color.FromArgb(100, 1, 30);
+                currentButton.ForeColor = Color.White;
+                currentButton.TextAlign = ContentAlignment.MiddleLeft;
+                currentButton.IconColor = Color.White;
+                currentButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+                currentButton.ImageAlign = ContentAlignment.MiddleLeft;
+                
+            }
+        }
+        private void ResetMenu()
+        {
+            DisableButton();
+            leftBorderPanel.Visible = false;
+        }
+
+        private void btnRegistrer_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
         }
 
         private void btnAppointment_Click(object sender, EventArgs e)
         {
-            this.Close();
-            th = new Thread(runAppointment);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
+            ActivateButton(sender);
         }
 
-        private void btnRegisterClient_Click(object sender, EventArgs e)
+        private void btnViewTable_Click(object sender, EventArgs e)
         {
-            this.Close();
-            th = new Thread(runClientRegister);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
+            ActivateButton(sender);
+        }
+
+        private void btnLogoHome_Click(object sender, EventArgs e)
+        {
+            ResetMenu();
         }
     }
 }

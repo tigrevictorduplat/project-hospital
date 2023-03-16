@@ -24,3 +24,5 @@ C:\Users\cinco\OneDrive\Documentos\GitHub\project-hospital\project-hospital\obj\
 C:\Users\cinco\OneDrive\Documentos\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.exe
 C:\Users\cinco\OneDrive\Documentos\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.pdb
 C:\Users\cinco\OneDrive\Documentos\GitHub\project-hospital\project-hospital\obj\Debug\project_hospital.TableViewerForm.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\project-hospital\project-hospital\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\cinco\OneDrive\Documentos\GitHub\project-hospital\project-hospital\obj\Debug\project-hospital.csproj.CopyComplete
