@@ -43,6 +43,10 @@ namespace project_hospital
                 leftBorderPanel.Location = new Point(0, currentButton.Location.Y);
                 leftBorderPanel.Visible = true;
                 leftBorderPanel.BringToFront();
+                //Changing Current Window Icon
+                currentPageIcon.IconChar = currentButton.IconChar;
+                lblCurrentPageTitle.Text = currentButton.Text;
+                
             }
         }
         private void DisableButton()
@@ -63,6 +67,10 @@ namespace project_hospital
         {
             DisableButton();
             leftBorderPanel.Visible = false;
+            //Changing Current Window Icon
+            currentPageIcon.IconChar = FontAwesome.Sharp.IconChar.HouseChimneyMedical;
+            lblCurrentPageTitle.Text = "Home";
+
         }
 
         private void btnRegistrer_Click(object sender, EventArgs e)

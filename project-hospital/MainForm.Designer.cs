@@ -30,8 +30,6 @@ namespace project_hospital
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.hospitalLogo = new System.Windows.Forms.PictureBox();
             this.panelSideBar = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
@@ -44,39 +42,19 @@ namespace project_hospital
             this.btnRegistrer = new FontAwesome.Sharp.IconButton();
             this.panelHomeIcon = new System.Windows.Forms.Panel();
             this.btnLogoHome = new System.Windows.Forms.PictureBox();
+            this.hospitalLogo = new System.Windows.Forms.PictureBox();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelTopBar = new System.Windows.Forms.Panel();
-            this.panelBorder = new System.Windows.Forms.Panel();
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hospitalLogo)).BeginInit();
+            this.lblCurrentPageTitle = new System.Windows.Forms.Label();
+            this.currentPageIcon = new FontAwesome.Sharp.IconPictureBox();
             this.panelSideBar.SuspendLayout();
             this.panelHomeIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogoHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hospitalLogo)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            this.panelTopBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentPageIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(202)))), ((int)(((byte)(208)))));
-            this.panelDesktop.Controls.Add(this.panelBorder);
-            this.panelDesktop.Controls.Add(this.panelTopBar);
-            this.panelDesktop.Controls.Add(this.hospitalLogo);
-            this.panelDesktop.Controls.Add(this.panelSideBar);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(4);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1022, 538);
-            this.panelDesktop.TabIndex = 0;
-            // 
-            // hospitalLogo
-            // 
-            this.hospitalLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.hospitalLogo.Image = ((System.Drawing.Image)(resources.GetObject("hospitalLogo.Image")));
-            this.hospitalLogo.Location = new System.Drawing.Point(361, 37);
-            this.hospitalLogo.Name = "hospitalLogo";
-            this.hospitalLogo.Size = new System.Drawing.Size(496, 489);
-            this.hospitalLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hospitalLogo.TabIndex = 5;
-            this.hospitalLogo.TabStop = false;
             // 
             // panelSideBar
             // 
@@ -301,23 +279,64 @@ namespace project_hospital
             this.btnLogoHome.TabStop = false;
             this.btnLogoHome.Click += new System.EventHandler(this.btnLogoHome_Click);
             // 
+            // hospitalLogo
+            // 
+            this.hospitalLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.hospitalLogo.Image = ((System.Drawing.Image)(resources.GetObject("hospitalLogo.Image")));
+            this.hospitalLogo.Location = new System.Drawing.Point(401, 126);
+            this.hospitalLogo.Name = "hospitalLogo";
+            this.hospitalLogo.Size = new System.Drawing.Size(400, 400);
+            this.hospitalLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hospitalLogo.TabIndex = 5;
+            this.hospitalLogo.TabStop = false;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(202)))), ((int)(((byte)(208)))));
+            this.panelDesktop.Controls.Add(this.panelTopBar);
+            this.panelDesktop.Controls.Add(this.hospitalLogo);
+            this.panelDesktop.Controls.Add(this.panelSideBar);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(4);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1022, 538);
+            this.panelDesktop.TabIndex = 0;
+            // 
             // panelTopBar
             // 
             this.panelTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(1)))), ((int)(((byte)(25)))));
+            this.panelTopBar.Controls.Add(this.lblCurrentPageTitle);
+            this.panelTopBar.Controls.Add(this.currentPageIcon);
             this.panelTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopBar.Location = new System.Drawing.Point(214, 0);
             this.panelTopBar.Name = "panelTopBar";
-            this.panelTopBar.Size = new System.Drawing.Size(808, 31);
-            this.panelTopBar.TabIndex = 6;
+            this.panelTopBar.Size = new System.Drawing.Size(808, 50);
+            this.panelTopBar.TabIndex = 8;
             // 
-            // panelBorder
+            // lblCurrentPageTitle
             // 
-            this.panelBorder.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panelBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(1)))), ((int)(((byte)(25)))));
-            this.panelBorder.Location = new System.Drawing.Point(214, 31);
-            this.panelBorder.Name = "panelBorder";
-            this.panelBorder.Size = new System.Drawing.Size(6, 507);
-            this.panelBorder.TabIndex = 7;
+            this.lblCurrentPageTitle.AutoSize = true;
+            this.lblCurrentPageTitle.Font = new System.Drawing.Font("Verdana", 8.2F);
+            this.lblCurrentPageTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(172)))));
+            this.lblCurrentPageTitle.Location = new System.Drawing.Point(58, 17);
+            this.lblCurrentPageTitle.Name = "lblCurrentPageTitle";
+            this.lblCurrentPageTitle.Size = new System.Drawing.Size(48, 17);
+            this.lblCurrentPageTitle.TabIndex = 1;
+            this.lblCurrentPageTitle.Text = "Home";
+            // 
+            // currentPageIcon
+            // 
+            this.currentPageIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(1)))), ((int)(((byte)(25)))));
+            this.currentPageIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(172)))));
+            this.currentPageIcon.IconChar = FontAwesome.Sharp.IconChar.HouseChimneyMedical;
+            this.currentPageIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(172)))));
+            this.currentPageIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.currentPageIcon.Location = new System.Drawing.Point(20, 9);
+            this.currentPageIcon.Name = "currentPageIcon";
+            this.currentPageIcon.Size = new System.Drawing.Size(32, 32);
+            this.currentPageIcon.TabIndex = 0;
+            this.currentPageIcon.TabStop = false;
             // 
             // MainForm
             // 
@@ -330,33 +349,37 @@ namespace project_hospital
             this.MinimumSize = new System.Drawing.Size(1040, 585);
             this.Name = "MainForm";
             this.Text = "Hospital Santo Arnaldo";
-            this.panelDesktop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.hospitalLogo)).EndInit();
             this.panelSideBar.ResumeLayout(false);
             this.panelHomeIcon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnLogoHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hospitalLogo)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelTopBar.ResumeLayout(false);
+            this.panelTopBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentPageIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panelSideBar;
-        private FontAwesome.Sharp.IconButton btnRegistrer;
-        private System.Windows.Forms.Panel panelHomeIcon;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton btnAppointment;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton btnViewTable;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton6;
-        private System.Windows.Forms.PictureBox hospitalLogo;
+        private FontAwesome.Sharp.IconButton btnViewTable;
+        private FontAwesome.Sharp.IconButton btnAppointment;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnRegistrer;
+        private System.Windows.Forms.Panel panelHomeIcon;
         private System.Windows.Forms.PictureBox btnLogoHome;
+        private System.Windows.Forms.PictureBox hospitalLogo;
+        private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panelTopBar;
-        private System.Windows.Forms.Panel panelBorder;
+        private System.Windows.Forms.Label lblCurrentPageTitle;
+        private FontAwesome.Sharp.IconPictureBox currentPageIcon;
     }
 }
 
