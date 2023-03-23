@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace project_hospital
 {
-    public partial class TableViewerForm : Form
+    public partial class RegisterServiceForm : Form
     {
-        public TableViewerForm()
+        public RegisterServiceForm()
         {
             InitializeComponent();
         }

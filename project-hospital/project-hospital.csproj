@@ -53,17 +53,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppointmentForm.cs">
+    <Compile Include="AppointmentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AppointmentForm.Designer.cs">
-      <DependentUpon>AppointmentForm.cs</DependentUpon>
+    <Compile Include="AppointmentsForm.Designer.cs">
+      <DependentUpon>AppointmentsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientRegisterForm.cs">
+    <Compile Include="DoctorsInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientRegisterForm.Designer.cs">
-      <DependentUpon>ClientRegisterForm.cs</DependentUpon>
+    <Compile Include="DoctorsInfoForm.Designer.cs">
+      <DependentUpon>DoctorsInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -71,22 +71,49 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TableViewerForm.cs">
+    <Compile Include="PatientInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TableViewerForm.Designer.cs">
-      <DependentUpon>TableViewerForm.cs</DependentUpon>
+    <Compile Include="PatientInfoForm.Designer.cs">
+      <DependentUpon>PatientInfoForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AppointmentForm.resx">
-      <DependentUpon>AppointmentForm.cs</DependentUpon>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPatientForm.Designer.cs">
+      <DependentUpon>RegisterPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterServiceForm.Designer.cs">
+      <DependentUpon>RegisterServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterUserForm.Designer.cs">
+      <DependentUpon>RegisterUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesInfoForm.Designer.cs">
+      <DependentUpon>ServicesInfoForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppointmentsForm.resx">
+      <DependentUpon>AppointmentsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientRegisterForm.resx">
-      <DependentUpon>ClientRegisterForm.cs</DependentUpon>
+    <EmbeddedResource Include="DoctorsInfoForm.resx">
+      <DependentUpon>DoctorsInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientInfoForm.resx">
+      <DependentUpon>PatientInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,8 +124,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TableViewerForm.resx">
-      <DependentUpon>TableViewerForm.cs</DependentUpon>
+    <EmbeddedResource Include="RegisterPatientForm.resx">
+      <DependentUpon>RegisterPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterServiceForm.resx">
+      <DependentUpon>RegisterServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterUserForm.resx">
+      <DependentUpon>RegisterUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesInfoForm.resx">
+      <DependentUpon>ServicesInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -1,4 +1,4 @@
-CREATE SCHEMA `dbhospital` ;
+   CREATE SCHEMA `dbhospital` ;
 
 CREATE TABLE `dbhospital`.`tbl_client` (
   `CPF` VARCHAR(11) NOT NULL,
@@ -39,4 +39,15 @@ CREATE TABLE `dbhospital`.`tbl_user` (
     REFERENCES `dbhospital`.`tbl_services` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+    
+    ALTER TABLE `dbhospital`.`tbl_appointment` 
+ADD COLUMN `fk_iddoctor` INT NOT NULL AFTER `fk_idservice`,
+ADD INDEX `fk_iddoctor_idx` (`fk_iddoctor` ASC) VISIBLE;
+;
+ALTER TABLE `dbhospital`.`tbl_appointment` 
+ADD CONSTRAINT `fk_iddoctor`
+  FOREIGN KEY (`fk_iddoctor`)
+  REFERENCES `dbhospital`.`tbl_user` (`ID`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
 
