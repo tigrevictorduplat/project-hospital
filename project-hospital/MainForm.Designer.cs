@@ -98,6 +98,7 @@ namespace project_hospital
             this.btnViewPatientsTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewPatientsTable.FlatAppearance.BorderSize = 0;
             this.btnViewPatientsTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewPatientsTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewPatientsTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnViewPatientsTable.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnViewPatientsTable.IconColor = System.Drawing.Color.White;
@@ -121,6 +122,7 @@ namespace project_hospital
             this.btnViewServicesTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewServicesTable.FlatAppearance.BorderSize = 0;
             this.btnViewServicesTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewServicesTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewServicesTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnViewServicesTable.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnViewServicesTable.IconColor = System.Drawing.Color.White;
@@ -144,6 +146,7 @@ namespace project_hospital
             this.btnViewDoctorsTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewDoctorsTable.FlatAppearance.BorderSize = 0;
             this.btnViewDoctorsTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewDoctorsTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewDoctorsTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnViewDoctorsTable.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnViewDoctorsTable.IconColor = System.Drawing.Color.White;
@@ -166,6 +169,7 @@ namespace project_hospital
             this.btnViewTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewTable.FlatAppearance.BorderSize = 0;
             this.btnViewTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewTable.ForeColor = System.Drawing.Color.White;
             this.btnViewTable.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.btnViewTable.IconColor = System.Drawing.Color.White;
@@ -187,6 +191,7 @@ namespace project_hospital
             this.btnAppointment.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAppointment.FlatAppearance.BorderSize = 0;
             this.btnAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAppointment.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppointment.ForeColor = System.Drawing.Color.White;
             this.btnAppointment.IconChar = FontAwesome.Sharp.IconChar.CalendarPlus;
             this.btnAppointment.IconColor = System.Drawing.Color.White;
@@ -220,6 +225,7 @@ namespace project_hospital
             this.btnUserRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUserRegister.FlatAppearance.BorderSize = 0;
             this.btnUserRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserRegister.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnUserRegister.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnUserRegister.IconColor = System.Drawing.Color.White;
@@ -243,6 +249,7 @@ namespace project_hospital
             this.btnPatientRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPatientRegister.FlatAppearance.BorderSize = 0;
             this.btnPatientRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPatientRegister.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPatientRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnPatientRegister.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnPatientRegister.IconColor = System.Drawing.Color.White;
@@ -266,6 +273,7 @@ namespace project_hospital
             this.btnServiceRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnServiceRegister.FlatAppearance.BorderSize = 0;
             this.btnServiceRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServiceRegister.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnServiceRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnServiceRegister.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnServiceRegister.IconColor = System.Drawing.Color.White;
@@ -288,6 +296,7 @@ namespace project_hospital
             this.btnRegistrer.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegistrer.FlatAppearance.BorderSize = 0;
             this.btnRegistrer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrer.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrer.ForeColor = System.Drawing.Color.White;
             this.btnRegistrer.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
             this.btnRegistrer.IconColor = System.Drawing.Color.White;
@@ -367,11 +376,11 @@ namespace project_hospital
             // lblCurrentPageTitle
             // 
             this.lblCurrentPageTitle.AutoSize = true;
-            this.lblCurrentPageTitle.Font = new System.Drawing.Font("Verdana", 8.2F);
+            this.lblCurrentPageTitle.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentPageTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(172)))));
             this.lblCurrentPageTitle.Location = new System.Drawing.Point(58, 17);
             this.lblCurrentPageTitle.Name = "lblCurrentPageTitle";
-            this.lblCurrentPageTitle.Size = new System.Drawing.Size(48, 17);
+            this.lblCurrentPageTitle.Size = new System.Drawing.Size(48, 23);
             this.lblCurrentPageTitle.TabIndex = 1;
             this.lblCurrentPageTitle.Text = "Home";
             // 
