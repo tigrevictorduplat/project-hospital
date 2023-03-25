@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblUserame = new System.Windows.Forms.Label();
             this.desktopPanel = new System.Windows.Forms.Panel();
             this.btnPanel = new System.Windows.Forms.Panel();
             this.btnCheckEqual = new FontAwesome.Sharp.IconButton();
             this.btnAddUser = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioPanel = new System.Windows.Forms.Panel();
             this.rdCompany = new System.Windows.Forms.RadioButton();
             this.rdDoctor = new System.Windows.Forms.RadioButton();
             this.rdClient = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.lblUserType = new System.Windows.Forms.Label();
             this.lblConfirmPassword = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.desktopPanel.SuspendLayout();
             this.btnPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.radioPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(280, 122);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(223, 30);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(280, 122);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(223, 30);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(280, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 30);
-            this.textBox1.TabIndex = 6;
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(280, 55);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(223, 30);
+            this.txtUsername.TabIndex = 6;
             // 
             // lblUserame
             // 
@@ -87,11 +87,11 @@
             // 
             this.desktopPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.desktopPanel.Controls.Add(this.btnPanel);
-            this.desktopPanel.Controls.Add(this.panel1);
-            this.desktopPanel.Controls.Add(this.textBox3);
-            this.desktopPanel.Controls.Add(this.textBox2);
+            this.desktopPanel.Controls.Add(this.radioPanel);
+            this.desktopPanel.Controls.Add(this.txtConfirmPassword);
+            this.desktopPanel.Controls.Add(this.txtPassword);
             this.desktopPanel.Controls.Add(this.lblUserType);
-            this.desktopPanel.Controls.Add(this.textBox1);
+            this.desktopPanel.Controls.Add(this.txtUsername);
             this.desktopPanel.Controls.Add(this.lblConfirmPassword);
             this.desktopPanel.Controls.Add(this.lblPassword);
             this.desktopPanel.Controls.Add(this.lblUserame);
@@ -148,17 +148,18 @@
             this.btnAddUser.Text = "Adicionar ";
             this.btnAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
-            // panel1
+            // radioPanel
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.rdCompany);
-            this.panel1.Controls.Add(this.rdDoctor);
-            this.panel1.Controls.Add(this.rdClient);
-            this.panel1.Location = new System.Drawing.Point(312, 256);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(159, 127);
-            this.panel1.TabIndex = 7;
+            this.radioPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioPanel.Controls.Add(this.rdCompany);
+            this.radioPanel.Controls.Add(this.rdDoctor);
+            this.radioPanel.Controls.Add(this.rdClient);
+            this.radioPanel.Location = new System.Drawing.Point(312, 256);
+            this.radioPanel.Name = "radioPanel";
+            this.radioPanel.Size = new System.Drawing.Size(159, 127);
+            this.radioPanel.TabIndex = 7;
             // 
             // rdCompany
             // 
@@ -202,17 +203,17 @@
             this.rdClient.Text = "Paciente";
             this.rdClient.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtConfirmPassword
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(280, 191);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(223, 30);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.txtConfirmPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Location = new System.Drawing.Point(280, 191);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(223, 30);
+            this.txtConfirmPassword.TabIndex = 5;
+            this.txtConfirmPassword.UseSystemPasswordChar = true;
             // 
             // lblUserType
             // 
@@ -262,22 +263,22 @@
             this.desktopPanel.ResumeLayout(false);
             this.desktopPanel.PerformLayout();
             this.btnPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.radioPanel.ResumeLayout(false);
+            this.radioPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblUserame;
         private System.Windows.Forms.Panel desktopPanel;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
         private System.Windows.Forms.Label lblConfirmPassword;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel radioPanel;
         private System.Windows.Forms.RadioButton rdCompany;
         private System.Windows.Forms.RadioButton rdDoctor;
         private System.Windows.Forms.RadioButton rdClient;

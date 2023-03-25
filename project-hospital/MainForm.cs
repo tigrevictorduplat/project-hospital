@@ -10,6 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using MySql.Data.MySqlClient;
 
 namespace project_hospital
 {
@@ -18,6 +19,7 @@ namespace project_hospital
         private IconButton currentButton;
         private Panel leftBorderPanel;
         private Form currentChildForm;
+        private MySqlConnection connection;
         public MainForm()
         {
             InitializeComponent();
@@ -39,33 +41,95 @@ namespace project_hospital
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
-
-        #region Submenu Configuration
-        private void HideSubMenus()
+        public void setConnection( MySqlConnection con)
         {
-            if (subMenuRegisterPanel.Visible == true)
-            {
-                subMenuRegisterPanel.Visible = false;
-            }
-            if (subMenuViewPanel.Visible == true)
-            {          
-                subMenuViewPanel.Visible = false;
-            }
+            this.connection = con;
         }
-        private void showSubMenu(Panel subPanel)
+        private void OpenChildForm(Form childForm)
         {
-            if(subPanel.Visible == false)
+            if (currentChildForm != null)
             {
-                HideSubMenus();
-                subPanel.Visible = true;
+                //Closing Last Open Form
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(childForm);
+            panelDesktop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            lblCurrentPageTitle.Text = childForm.Text;
+        }
+
+        #region Top Bar Controls
+        private void topBarExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void topBarResize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
             } else
             {
-                subPanel.Visible = false;
+                WindowState = FormWindowState.Normal;
             }
         }
 
+        private void topBarMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
         #endregion
-
+        #region Drag Form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+                private extern static void ReleaseCapture();
+                [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+                private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+                private void panelTopBar_MouseDown(object sender, MouseEventArgs e)
+                {
+                    ReleaseCapture();
+                    SendMessage(this.Handle, 0x112, 0xf012, 0);
+                }
+        #endregion
+           
+        #region Register Section
+        private void btnServiceRegister_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RegisterServiceForm());
+            
+        }
+        private void btnPatientRegister_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RegisterPatientForm());
+            
+        }
+        private void btnUserRegister_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RegisterUserForm());
+           
+        }
+        #endregion
+        
+        #region View Table Section
+        private void btnViewDoctorsTable_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DoctorsInfoForm());
+        }
+        private void btnViewServicesTable_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ServicesInfoForm());
+        }
+        private void btnViewPatientsTable_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new PatientInfoForm());
+        }
+        #endregion
+        
         #region Button Transform
                 private void ActivateButton(object senderBtn)
                 {
@@ -107,33 +171,7 @@ namespace project_hospital
                     }
                 }
                 #endregion
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentChildForm != null)
-            {
-                //Closing Last Open Form
-                currentChildForm.Close();
-            } 
-            currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-            lblCurrentPageTitle.Text = childForm.Text;
-        }
-        private void ResetMenu()
-        {
-            DisableButton();
-            HideSubMenus();
-            leftBorderPanel.Visible = false;
-            //Changing Current Window Icon
-            currentPageIcon.IconChar = FontAwesome.Sharp.IconChar.HouseChimneyMedical;
-            lblCurrentPageTitle.Text = "Home";
-
-        }
+                
         #region Menu Buttons
         private void btnRegistrer_Click(object sender, EventArgs e)
         {
@@ -154,6 +192,17 @@ namespace project_hospital
             showSubMenu(subMenuViewPanel);
         }
 
+        private void ResetMenu()
+        {
+            DisableButton();
+            HideSubMenus();
+            leftBorderPanel.Visible = false;
+            //Changing Current Window Icon
+            currentPageIcon.IconChar = FontAwesome.Sharp.IconChar.HouseChimneyMedical;
+            lblCurrentPageTitle.Text = "Home";
+
+        }
+
         private void btnLogoHome_Click(object sender, EventArgs e)
         {
             ResetMenu();
@@ -164,74 +213,41 @@ namespace project_hospital
             }
         }
         #endregion
-
-        #region Drag Form
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-                private extern static void ReleaseCapture();
-                [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-                private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-                private void panelTopBar_MouseDown(object sender, MouseEventArgs e)
-                {
-                    ReleaseCapture();
-                    SendMessage(this.Handle, 0x112, 0xf012, 0);
-                }
-        #endregion
-
-        #region Register Section
-        private void btnServiceRegister_Click(object sender, EventArgs e)
+        
+        #region Submenu Configuration
+        private void HideSubMenus()
         {
-            OpenChildForm(new RegisterServiceForm());
-            
-        }
-        private void btnPatientRegister_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new RegisterPatientForm());
-            
-        }
-        private void btnUserRegister_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new RegisterUserForm());
-           
-        }
-        #endregion
-
-        #region View Table Section
-        private void btnViewDoctorsTable_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new DoctorsInfoForm());
-        }
-        private void btnViewServicesTable_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ServicesInfoForm());
-        }
-        private void btnViewPatientsTable_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new PatientInfoForm());
-        }
-        #endregion
-
-        #region Top Bar Controls
-        private void topBarExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void topBarResize_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
+            if (subMenuRegisterPanel.Visible == true)
             {
-                WindowState = FormWindowState.Maximized;
+                subMenuRegisterPanel.Visible = false;
+            }
+            if (subMenuViewPanel.Visible == true)
+            {          
+                subMenuViewPanel.Visible = false;
+            }
+        }
+        private void showSubMenu(Panel subPanel)
+        {
+            if(subPanel.Visible == false)
+            {
+                HideSubMenus();
+                subPanel.Visible = true;
             } else
             {
-                WindowState = FormWindowState.Normal;
+                subPanel.Visible = false;
             }
         }
 
-        private void topBarMinimize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
         #endregion
 
+        private void currentPageIcon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCurrentPageTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
