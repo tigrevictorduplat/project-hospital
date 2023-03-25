@@ -81,11 +81,10 @@ namespace project_hospital
                 Console.WriteLine("Conexão Verificada");
                 connection.Close();
                 //Opening Main Menu
-                this.Close();
-                th = new Thread(openMainForm);
-                th.SetApartmentState(ApartmentState.STA);
-                th.Start();
-
+                this.Hide();
+                MainForm mainForm = new MainForm();
+                mainForm.setConnection(connection);
+                mainForm.Show();
 
             } catch (Exception ex) {
                 MessageBox.Show(ex.Message);

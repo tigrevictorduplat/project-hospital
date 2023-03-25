@@ -144,6 +144,7 @@
     <Compile Include="ServicesInfoForm.Designer.cs">
       <DependentUpon>ServicesInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UnmatchingRegisterPasswordException.cs" />
     <EmbeddedResource Include="ADMConnectionForm.resx">
       <DependentUpon>ADMConnectionForm.cs</DependentUpon>
     </EmbeddedResource>

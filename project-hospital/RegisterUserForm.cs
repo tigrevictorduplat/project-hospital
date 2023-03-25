@@ -24,7 +24,7 @@ namespace project_hospital
             string password = txtPassword.Text;
             string confirmPasswor = txtConfirmPassword.Text;
             if (password != confirmPasswor) {
-                MessageBox.Show("As senhas não coincidem!");
+                throw new UnmatchingRegisterPasswordException("As senhas não coincidem!");
             }
             string username = txtUsername.Text;
             string checkedButton = radioPanel.Controls.OfType<RadioButton>()
