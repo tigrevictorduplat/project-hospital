@@ -1,8 +1,8 @@
 # Projeto Hospital
  ## Sumário
- - [**Objetivo**](/README.md/#objetivo)
- - [**Descrição**](/README.md/#descrição)
- - [**Diário do Projeto**](/README.md/#diário-do-projeto)
+ - [**Objetivo**](/README(pt-br).md/#objetivo)
+ - [**Descrição**](/README(pt-br).md/#descrição)
+ - [**Janelas do Sistema**](/README(pt-br).md/#janelas-do-sistema)
   ***
 
 ## Objetivo 🎯
@@ -58,17 +58,6 @@ Descrição Serviço | VARCHAR(45) | ---
 🔑 ID Serviço | INT | Chave Estrangeira
 
 ***
-## Diário do Projeto 📝
+# Janelas do Sistema 
 
-### Dia 1
-- [X] Criação do Banco de Dados e das Tabelas Principais
-    - [X] Tabela Cliente
-    - [X] Tabela Usuário
-    - [X] Tabela Serviços
-    - [X] Tabela Agendamento (Cliente-Serviço)
-- [X] Criação do Projeto C#
-    - [X] Janela Principal
-    - [X] Janela Cadastro
-        - [X] Aba Cliente
-        - [X] Aba Usuário
-    - [X] Janela Agendamento
+## 
