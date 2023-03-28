@@ -228,7 +228,7 @@
             this.MinimumSize = new System.Drawing.Size(424, 459);
             this.Name = "ADMConnectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Conexão Banco de Dados";
+            this.Text = "G";
             this.desktopPanel.ResumeLayout(false);
             this.desktopPanel.PerformLayout();
             this.panelTopBar.ResumeLayout(false);
