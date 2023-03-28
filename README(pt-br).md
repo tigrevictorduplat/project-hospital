@@ -2,6 +2,7 @@
  ## Sumário
  - [**Objetivo**](/README(pt-br).md/#objetivo)
  - [**Descrição**](/README(pt-br).md/#descrição)
+ - [**Demonstrações**](/README(pt-br).md/#demonstração-do-programa)
  - [**Janelas do Sistema**](/README(pt-br).md/#janelas-do-sistema)
   ***
 
@@ -58,9 +59,12 @@ Descrição Serviço | VARCHAR(45) | ---
 🔑 ID Serviço | INT | Chave Estrangeira
 
 ***
-# Janelas do Sistema 
+# Demonstração do Programa
+#### ADMConnection Form
+<video width=60% alt="Demonstração ADM Conncetion" src="https://user-images.githubusercontent.com/98099656/228383875-c5ba088c-b148-4af8-89f0-c2a03d9b27c1.mp4"></video>
 
-## Apresentação Geral
-![ADMConnectorForm - Demonstração parte 1](/program-demo/Demonstra%C3%A7%C3%A3o-do-Programa-v.0.0.1%20(1).mp4)
-![ADMConnectorForm - Demonstração parte 2](/program-demo/Demonstra%C3%A7%C3%A3o-do-Programa-v.0.0.1%20(2).mp4)
-###
+#### Menu Principal
+<video width=60% alt="Demonstração Menu Principal" src="https://user-images.githubusercontent.com/98099656/228383935-8313269d-6f62-4de2-a515-0981eda174d6.mp4"></video>
+
+***
+# Janelas do Sistema
