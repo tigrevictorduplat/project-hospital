@@ -27,10 +27,10 @@ namespace project_hospital
                 throw new UnmatchingRegisterPasswordException("As senhas não coincidem!");
             }
             string username = txtUsername.Text;
-            string checkedButton = radioPanel.Controls.OfType<RadioButton>()
+            string userType = radioPanel.Controls.OfType<RadioButton>()
                                        .FirstOrDefault(r => r.Checked).Text;
-
             
         }
+
     }
 }

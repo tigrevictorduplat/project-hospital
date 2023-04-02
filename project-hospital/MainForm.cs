@@ -239,15 +239,5 @@ namespace project_hospital
         }
 
         #endregion
-
-        private void currentPageIcon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCurrentPageTitle_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

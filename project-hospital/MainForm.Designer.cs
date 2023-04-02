@@ -383,7 +383,6 @@ namespace project_hospital
             this.lblCurrentPageTitle.Size = new System.Drawing.Size(48, 23);
             this.lblCurrentPageTitle.TabIndex = 1;
             this.lblCurrentPageTitle.Text = "Home";
-            this.lblCurrentPageTitle.Click += new System.EventHandler(this.lblCurrentPageTitle_Click);
             // 
             // topBarExit
             // 
@@ -442,7 +441,6 @@ namespace project_hospital
             this.currentPageIcon.Size = new System.Drawing.Size(32, 32);
             this.currentPageIcon.TabIndex = 0;
             this.currentPageIcon.TabStop = false;
-            this.currentPageIcon.Click += new System.EventHandler(this.currentPageIcon_Click);
             // 
             // MainForm
             // 
