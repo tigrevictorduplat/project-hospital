@@ -32,15 +32,15 @@
             this.desktopPanel = new System.Windows.Forms.Panel();
             this.panelTopBar = new System.Windows.Forms.Panel();
             this.lblCurrentPageTitle = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblUserame = new System.Windows.Forms.Label();
             this.topBarExit = new FontAwesome.Sharp.IconPictureBox();
             this.topBarResize = new FontAwesome.Sharp.IconPictureBox();
             this.topBarMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.currentPageIcon = new FontAwesome.Sharp.IconPictureBox();
             this.btnAttemptConnection = new FontAwesome.Sharp.IconButton();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.lblUserame = new System.Windows.Forms.Label();
             this.desktopPanel.SuspendLayout();
             this.panelTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.topBarExit)).BeginInit();
@@ -88,6 +88,53 @@
             this.lblCurrentPageTitle.Size = new System.Drawing.Size(120, 23);
             this.lblCurrentPageTitle.TabIndex = 1;
             this.lblCurrentPageTitle.Text = "Login do Sistema";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(85, 238);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(238, 25);
+            this.txtPassword.TabIndex = 11;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(85, 133);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(238, 25);
+            this.txtUsername.TabIndex = 12;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(1)))), ((int)(((byte)(25)))));
+            this.lblPassword.Location = new System.Drawing.Point(159, 182);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(88, 32);
+            this.lblPassword.TabIndex = 9;
+            this.lblPassword.Text = "Senha";
+            // 
+            // lblUserame
+            // 
+            this.lblUserame.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUserame.AutoSize = true;
+            this.lblUserame.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(1)))), ((int)(((byte)(25)))));
+            this.lblUserame.Location = new System.Drawing.Point(151, 77);
+            this.lblUserame.Name = "lblUserame";
+            this.lblUserame.Size = new System.Drawing.Size(101, 32);
+            this.lblUserame.TabIndex = 10;
+            this.lblUserame.Text = "Usuário";
             // 
             // topBarExit
             // 
@@ -168,53 +215,6 @@
             this.btnAttemptConnection.UseVisualStyleBackColor = false;
             this.btnAttemptConnection.Click += new System.EventHandler(this.btnAttemptConnection_Click);
             // 
-            // txtPassword
-            // 
-            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(85, 238);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(238, 25);
-            this.txtPassword.TabIndex = 11;
-            this.txtPassword.UseSystemPasswordChar = true;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(85, 133);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(238, 25);
-            this.txtUsername.TabIndex = 12;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(1)))), ((int)(((byte)(25)))));
-            this.lblPassword.Location = new System.Drawing.Point(159, 182);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(88, 32);
-            this.lblPassword.TabIndex = 9;
-            this.lblPassword.Text = "Senha";
-            // 
-            // lblUserame
-            // 
-            this.lblUserame.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUserame.AutoSize = true;
-            this.lblUserame.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(1)))), ((int)(((byte)(25)))));
-            this.lblUserame.Location = new System.Drawing.Point(151, 77);
-            this.lblUserame.Name = "lblUserame";
-            this.lblUserame.Size = new System.Drawing.Size(101, 32);
-            this.lblUserame.TabIndex = 10;
-            this.lblUserame.Text = "Usuário";
-            // 
             // ADMConnectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -228,7 +228,7 @@
             this.MinimumSize = new System.Drawing.Size(424, 459);
             this.Name = "ADMConnectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "G";
+            this.Text = "Conexão Banco de Dados";
             this.desktopPanel.ResumeLayout(false);
             this.desktopPanel.PerformLayout();
             this.panelTopBar.ResumeLayout(false);

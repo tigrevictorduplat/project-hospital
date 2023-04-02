@@ -2,6 +2,7 @@
  ## Sumário
  - [**Objetivo**](/README(pt-br).md/#objetivo)
  - [**Descrição**](/README(pt-br).md/#descrição)
+ - [**Demonstrações**](/README(pt-br).md/#demonstração-do-programa)
  - [**Janelas do Sistema**](/README(pt-br).md/#janelas-do-sistema)
   ***
 
@@ -58,6 +59,15 @@ Descrição Serviço | VARCHAR(45) | ---
 🔑 ID Serviço | INT | Chave Estrangeira
 
 ***
-# Janelas do Sistema 
+# Demonstração do Programa
+#### ADMConnection Form
+<video width=60% alt="Demonstração ADM Connection" src="https://user-images.githubusercontent.com/98099656/228383875-c5ba088c-b148-4af8-89f0-c2a03d9b27c1.mp4"></video>
 
-## 
+#### Menu Principal
+<video width=60% alt="Demonstração Menu Principal" src="https://user-images.githubusercontent.com/98099656/228383935-8313269d-6f62-4de2-a515-0981eda174d6.mp4"></video>
+
+***
+# Janelas do Sistema
+
+## ADMConnetion Form - Janela de Conexão com o Banco
+<img src="/program-demo/ADMConnection.jpg" alt="Imagem da Janela ADM Connection">
