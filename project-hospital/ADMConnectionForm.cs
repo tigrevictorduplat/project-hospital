@@ -15,7 +15,6 @@ namespace project_hospital
 {
     public partial class ADMConnectionForm : Form
     {
-        Thread th;
         MySqlConnection connection;
         public ADMConnectionForm()
         {
@@ -62,12 +61,6 @@ namespace project_hospital
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
         #endregion
-  
-        private void openMainForm()
-        {
-            Application.Run(new MainForm());
-
-        }
         private void btnAttemptConnection_Click(object sender, EventArgs e)
         {
             try {

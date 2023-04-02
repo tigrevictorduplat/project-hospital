@@ -76,9 +76,10 @@ namespace project_hospital
             this.panelSideBar.Controls.Add(this.btnRegistrer);
             this.panelSideBar.Controls.Add(this.panelHomeIcon);
             this.panelSideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSideBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelSideBar.Location = new System.Drawing.Point(0, 0);
             this.panelSideBar.Name = "panelSideBar";
-            this.panelSideBar.Size = new System.Drawing.Size(214, 538);
+            this.panelSideBar.Size = new System.Drawing.Size(305, 656);
             this.panelSideBar.TabIndex = 4;
             // 
             // subMenuViewPanel
@@ -87,9 +88,9 @@ namespace project_hospital
             this.subMenuViewPanel.Controls.Add(this.btnViewServicesTable);
             this.subMenuViewPanel.Controls.Add(this.btnViewDoctorsTable);
             this.subMenuViewPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subMenuViewPanel.Location = new System.Drawing.Point(0, 375);
+            this.subMenuViewPanel.Location = new System.Drawing.Point(0, 418);
             this.subMenuViewPanel.Name = "subMenuViewPanel";
-            this.subMenuViewPanel.Size = new System.Drawing.Size(214, 90);
+            this.subMenuViewPanel.Size = new System.Drawing.Size(305, 148);
             this.subMenuViewPanel.TabIndex = 7;
             // 
             // btnViewPatientsTable
@@ -98,17 +99,17 @@ namespace project_hospital
             this.btnViewPatientsTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewPatientsTable.FlatAppearance.BorderSize = 0;
             this.btnViewPatientsTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewPatientsTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewPatientsTable.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewPatientsTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnViewPatientsTable.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnViewPatientsTable.IconColor = System.Drawing.Color.White;
             this.btnViewPatientsTable.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnViewPatientsTable.IconSize = 24;
             this.btnViewPatientsTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewPatientsTable.Location = new System.Drawing.Point(0, 60);
+            this.btnViewPatientsTable.Location = new System.Drawing.Point(0, 94);
             this.btnViewPatientsTable.Name = "btnViewPatientsTable";
             this.btnViewPatientsTable.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
-            this.btnViewPatientsTable.Size = new System.Drawing.Size(214, 30);
+            this.btnViewPatientsTable.Size = new System.Drawing.Size(305, 47);
             this.btnViewPatientsTable.TabIndex = 9;
             this.btnViewPatientsTable.Text = "Pacientes";
             this.btnViewPatientsTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,17 +123,17 @@ namespace project_hospital
             this.btnViewServicesTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewServicesTable.FlatAppearance.BorderSize = 0;
             this.btnViewServicesTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewServicesTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewServicesTable.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewServicesTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnViewServicesTable.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnViewServicesTable.IconColor = System.Drawing.Color.White;
             this.btnViewServicesTable.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnViewServicesTable.IconSize = 24;
             this.btnViewServicesTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewServicesTable.Location = new System.Drawing.Point(0, 30);
+            this.btnViewServicesTable.Location = new System.Drawing.Point(0, 47);
             this.btnViewServicesTable.Name = "btnViewServicesTable";
             this.btnViewServicesTable.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
-            this.btnViewServicesTable.Size = new System.Drawing.Size(214, 30);
+            this.btnViewServicesTable.Size = new System.Drawing.Size(305, 47);
             this.btnViewServicesTable.TabIndex = 7;
             this.btnViewServicesTable.Text = "Serviços";
             this.btnViewServicesTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,7 +147,7 @@ namespace project_hospital
             this.btnViewDoctorsTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewDoctorsTable.FlatAppearance.BorderSize = 0;
             this.btnViewDoctorsTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewDoctorsTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewDoctorsTable.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewDoctorsTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnViewDoctorsTable.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnViewDoctorsTable.IconColor = System.Drawing.Color.White;
@@ -156,7 +157,7 @@ namespace project_hospital
             this.btnViewDoctorsTable.Location = new System.Drawing.Point(0, 0);
             this.btnViewDoctorsTable.Name = "btnViewDoctorsTable";
             this.btnViewDoctorsTable.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
-            this.btnViewDoctorsTable.Size = new System.Drawing.Size(214, 30);
+            this.btnViewDoctorsTable.Size = new System.Drawing.Size(305, 47);
             this.btnViewDoctorsTable.TabIndex = 8;
             this.btnViewDoctorsTable.Text = "Médicos";
             this.btnViewDoctorsTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,16 +170,16 @@ namespace project_hospital
             this.btnViewTable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewTable.FlatAppearance.BorderSize = 0;
             this.btnViewTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewTable.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewTable.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewTable.ForeColor = System.Drawing.Color.White;
             this.btnViewTable.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.btnViewTable.IconColor = System.Drawing.Color.White;
             this.btnViewTable.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnViewTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewTable.Location = new System.Drawing.Point(0, 315);
+            this.btnViewTable.Location = new System.Drawing.Point(0, 358);
             this.btnViewTable.Name = "btnViewTable";
             this.btnViewTable.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnViewTable.Size = new System.Drawing.Size(214, 60);
+            this.btnViewTable.Size = new System.Drawing.Size(305, 60);
             this.btnViewTable.TabIndex = 6;
             this.btnViewTable.Text = "Consultar";
             this.btnViewTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,16 +192,16 @@ namespace project_hospital
             this.btnAppointment.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAppointment.FlatAppearance.BorderSize = 0;
             this.btnAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAppointment.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAppointment.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppointment.ForeColor = System.Drawing.Color.White;
             this.btnAppointment.IconChar = FontAwesome.Sharp.IconChar.CalendarPlus;
             this.btnAppointment.IconColor = System.Drawing.Color.White;
             this.btnAppointment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAppointment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAppointment.Location = new System.Drawing.Point(0, 255);
+            this.btnAppointment.Location = new System.Drawing.Point(0, 298);
             this.btnAppointment.Name = "btnAppointment";
             this.btnAppointment.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnAppointment.Size = new System.Drawing.Size(214, 60);
+            this.btnAppointment.Size = new System.Drawing.Size(305, 60);
             this.btnAppointment.TabIndex = 5;
             this.btnAppointment.Text = "Agendamento";
             this.btnAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,9 +215,9 @@ namespace project_hospital
             this.subMenuRegisterPanel.Controls.Add(this.btnPatientRegister);
             this.subMenuRegisterPanel.Controls.Add(this.btnServiceRegister);
             this.subMenuRegisterPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subMenuRegisterPanel.Location = new System.Drawing.Point(0, 164);
+            this.subMenuRegisterPanel.Location = new System.Drawing.Point(0, 184);
             this.subMenuRegisterPanel.Name = "subMenuRegisterPanel";
-            this.subMenuRegisterPanel.Size = new System.Drawing.Size(214, 91);
+            this.subMenuRegisterPanel.Size = new System.Drawing.Size(305, 114);
             this.subMenuRegisterPanel.TabIndex = 2;
             // 
             // btnUserRegister
@@ -225,17 +226,17 @@ namespace project_hospital
             this.btnUserRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUserRegister.FlatAppearance.BorderSize = 0;
             this.btnUserRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserRegister.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserRegister.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnUserRegister.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnUserRegister.IconColor = System.Drawing.Color.White;
             this.btnUserRegister.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUserRegister.IconSize = 24;
             this.btnUserRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUserRegister.Location = new System.Drawing.Point(0, 60);
+            this.btnUserRegister.Location = new System.Drawing.Point(0, 75);
             this.btnUserRegister.Name = "btnUserRegister";
             this.btnUserRegister.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
-            this.btnUserRegister.Size = new System.Drawing.Size(214, 30);
+            this.btnUserRegister.Size = new System.Drawing.Size(305, 39);
             this.btnUserRegister.TabIndex = 2;
             this.btnUserRegister.Text = "Usuário";
             this.btnUserRegister.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,17 +250,17 @@ namespace project_hospital
             this.btnPatientRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPatientRegister.FlatAppearance.BorderSize = 0;
             this.btnPatientRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPatientRegister.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPatientRegister.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPatientRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnPatientRegister.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnPatientRegister.IconColor = System.Drawing.Color.White;
             this.btnPatientRegister.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPatientRegister.IconSize = 24;
             this.btnPatientRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPatientRegister.Location = new System.Drawing.Point(0, 30);
+            this.btnPatientRegister.Location = new System.Drawing.Point(0, 40);
             this.btnPatientRegister.Name = "btnPatientRegister";
             this.btnPatientRegister.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
-            this.btnPatientRegister.Size = new System.Drawing.Size(214, 30);
+            this.btnPatientRegister.Size = new System.Drawing.Size(305, 35);
             this.btnPatientRegister.TabIndex = 3;
             this.btnPatientRegister.Text = "Paciente";
             this.btnPatientRegister.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,7 +274,7 @@ namespace project_hospital
             this.btnServiceRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnServiceRegister.FlatAppearance.BorderSize = 0;
             this.btnServiceRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnServiceRegister.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnServiceRegister.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnServiceRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(200)))), ((int)(((byte)(210)))));
             this.btnServiceRegister.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnServiceRegister.IconColor = System.Drawing.Color.White;
@@ -283,7 +284,7 @@ namespace project_hospital
             this.btnServiceRegister.Location = new System.Drawing.Point(0, 0);
             this.btnServiceRegister.Name = "btnServiceRegister";
             this.btnServiceRegister.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
-            this.btnServiceRegister.Size = new System.Drawing.Size(214, 30);
+            this.btnServiceRegister.Size = new System.Drawing.Size(305, 40);
             this.btnServiceRegister.TabIndex = 4;
             this.btnServiceRegister.Text = "Serviço";
             this.btnServiceRegister.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,16 +297,16 @@ namespace project_hospital
             this.btnRegistrer.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegistrer.FlatAppearance.BorderSize = 0;
             this.btnRegistrer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrer.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrer.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrer.ForeColor = System.Drawing.Color.White;
             this.btnRegistrer.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
             this.btnRegistrer.IconColor = System.Drawing.Color.White;
             this.btnRegistrer.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRegistrer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistrer.Location = new System.Drawing.Point(0, 104);
+            this.btnRegistrer.Location = new System.Drawing.Point(0, 124);
             this.btnRegistrer.Name = "btnRegistrer";
             this.btnRegistrer.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnRegistrer.Size = new System.Drawing.Size(214, 60);
+            this.btnRegistrer.Size = new System.Drawing.Size(305, 60);
             this.btnRegistrer.TabIndex = 1;
             this.btnRegistrer.Text = "Cadastrar";
             this.btnRegistrer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -319,16 +320,16 @@ namespace project_hospital
             this.panelHomeIcon.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHomeIcon.Location = new System.Drawing.Point(0, 0);
             this.panelHomeIcon.Name = "panelHomeIcon";
-            this.panelHomeIcon.Size = new System.Drawing.Size(214, 104);
+            this.panelHomeIcon.Size = new System.Drawing.Size(305, 124);
             this.panelHomeIcon.TabIndex = 0;
             // 
             // btnLogoHome
             // 
             this.btnLogoHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogoHome.Image = ((System.Drawing.Image)(resources.GetObject("btnLogoHome.Image")));
-            this.btnLogoHome.Location = new System.Drawing.Point(49, 4);
+            this.btnLogoHome.Location = new System.Drawing.Point(77, 7);
             this.btnLogoHome.Name = "btnLogoHome";
-            this.btnLogoHome.Size = new System.Drawing.Size(123, 97);
+            this.btnLogoHome.Size = new System.Drawing.Size(150, 110);
             this.btnLogoHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnLogoHome.TabIndex = 5;
             this.btnLogoHome.TabStop = false;
@@ -338,9 +339,9 @@ namespace project_hospital
             // 
             this.hospitalLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.hospitalLogo.Image = ((System.Drawing.Image)(resources.GetObject("hospitalLogo.Image")));
-            this.hospitalLogo.Location = new System.Drawing.Point(390, 91);
+            this.hospitalLogo.Location = new System.Drawing.Point(460, 120);
             this.hospitalLogo.Name = "hospitalLogo";
-            this.hospitalLogo.Size = new System.Drawing.Size(400, 400);
+            this.hospitalLogo.Size = new System.Drawing.Size(470, 423);
             this.hospitalLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hospitalLogo.TabIndex = 5;
             this.hospitalLogo.TabStop = false;
@@ -355,7 +356,7 @@ namespace project_hospital
             this.panelDesktop.Location = new System.Drawing.Point(0, 0);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1022, 538);
+            this.panelDesktop.Size = new System.Drawing.Size(1124, 656);
             this.panelDesktop.TabIndex = 0;
             // 
             // panelTopBar
@@ -367,23 +368,22 @@ namespace project_hospital
             this.panelTopBar.Controls.Add(this.topBarMinimize);
             this.panelTopBar.Controls.Add(this.currentPageIcon);
             this.panelTopBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopBar.Location = new System.Drawing.Point(214, 0);
+            this.panelTopBar.Location = new System.Drawing.Point(305, 0);
             this.panelTopBar.Name = "panelTopBar";
-            this.panelTopBar.Size = new System.Drawing.Size(808, 50);
+            this.panelTopBar.Size = new System.Drawing.Size(819, 60);
             this.panelTopBar.TabIndex = 8;
             this.panelTopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTopBar_MouseDown);
             // 
             // lblCurrentPageTitle
             // 
             this.lblCurrentPageTitle.AutoSize = true;
-            this.lblCurrentPageTitle.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentPageTitle.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentPageTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(172)))));
-            this.lblCurrentPageTitle.Location = new System.Drawing.Point(58, 17);
+            this.lblCurrentPageTitle.Location = new System.Drawing.Point(62, 15);
             this.lblCurrentPageTitle.Name = "lblCurrentPageTitle";
-            this.lblCurrentPageTitle.Size = new System.Drawing.Size(48, 23);
+            this.lblCurrentPageTitle.Size = new System.Drawing.Size(65, 30);
             this.lblCurrentPageTitle.TabIndex = 1;
             this.lblCurrentPageTitle.Text = "Home";
-            this.lblCurrentPageTitle.Click += new System.EventHandler(this.lblCurrentPageTitle_Click);
             // 
             // topBarExit
             // 
@@ -393,9 +393,10 @@ namespace project_hospital
             this.topBarExit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
             this.topBarExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(229)))), ((int)(((byte)(232)))));
             this.topBarExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.topBarExit.Location = new System.Drawing.Point(754, 9);
+            this.topBarExit.IconSize = 40;
+            this.topBarExit.Location = new System.Drawing.Point(757, 10);
             this.topBarExit.Name = "topBarExit";
-            this.topBarExit.Size = new System.Drawing.Size(32, 32);
+            this.topBarExit.Size = new System.Drawing.Size(40, 40);
             this.topBarExit.TabIndex = 0;
             this.topBarExit.TabStop = false;
             this.topBarExit.Click += new System.EventHandler(this.topBarExit_Click);
@@ -408,9 +409,10 @@ namespace project_hospital
             this.topBarResize.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
             this.topBarResize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(229)))), ((int)(((byte)(232)))));
             this.topBarResize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.topBarResize.Location = new System.Drawing.Point(716, 9);
+            this.topBarResize.IconSize = 40;
+            this.topBarResize.Location = new System.Drawing.Point(701, 10);
             this.topBarResize.Name = "topBarResize";
-            this.topBarResize.Size = new System.Drawing.Size(32, 32);
+            this.topBarResize.Size = new System.Drawing.Size(40, 40);
             this.topBarResize.TabIndex = 0;
             this.topBarResize.TabStop = false;
             this.topBarResize.Click += new System.EventHandler(this.topBarResize_Click);
@@ -423,9 +425,10 @@ namespace project_hospital
             this.topBarMinimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.topBarMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(229)))), ((int)(((byte)(232)))));
             this.topBarMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.topBarMinimize.Location = new System.Drawing.Point(678, 9);
+            this.topBarMinimize.IconSize = 40;
+            this.topBarMinimize.Location = new System.Drawing.Point(645, 10);
             this.topBarMinimize.Name = "topBarMinimize";
-            this.topBarMinimize.Size = new System.Drawing.Size(32, 32);
+            this.topBarMinimize.Size = new System.Drawing.Size(40, 40);
             this.topBarMinimize.TabIndex = 0;
             this.topBarMinimize.TabStop = false;
             this.topBarMinimize.Click += new System.EventHandler(this.topBarMinimize_Click);
@@ -437,18 +440,18 @@ namespace project_hospital
             this.currentPageIcon.IconChar = FontAwesome.Sharp.IconChar.HouseChimneyMedical;
             this.currentPageIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(172)))));
             this.currentPageIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.currentPageIcon.Location = new System.Drawing.Point(20, 9);
+            this.currentPageIcon.IconSize = 48;
+            this.currentPageIcon.Location = new System.Drawing.Point(8, 6);
             this.currentPageIcon.Name = "currentPageIcon";
-            this.currentPageIcon.Size = new System.Drawing.Size(32, 32);
+            this.currentPageIcon.Size = new System.Drawing.Size(48, 48);
             this.currentPageIcon.TabIndex = 0;
             this.currentPageIcon.TabStop = false;
-            this.currentPageIcon.Click += new System.EventHandler(this.currentPageIcon_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 538);
+            this.ClientSize = new System.Drawing.Size(1124, 656);
             this.Controls.Add(this.panelDesktop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);

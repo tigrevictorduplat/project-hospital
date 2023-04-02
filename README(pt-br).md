@@ -2,7 +2,8 @@
  ## Sumário
  - [**Objetivo**](/README(pt-br).md/#objetivo)
  - [**Descrição**](/README(pt-br).md/#descrição)
- - [**Diário do Projeto**](/README(pt-br).md/#diário-do-projeto)
+ - [**Demonstrações**](/README(pt-br).md/#demonstração-do-programa)
+ - [**Janelas do Sistema**](/README(pt-br).md/#janelas-do-sistema)
   ***
 
 ## Objetivo 🎯
@@ -58,17 +59,15 @@ Descrição Serviço | VARCHAR(45) | ---
 🔑 ID Serviço | INT | Chave Estrangeira
 
 ***
-## Diário do Projeto 📝
+# Demonstração do Programa
+#### ADMConnection Form
+<video width=60% alt="Demonstração ADM Connection" src="https://user-images.githubusercontent.com/98099656/228383875-c5ba088c-b148-4af8-89f0-c2a03d9b27c1.mp4"></video>
 
-### Dia 1
-- [X] Criação do Banco de Dados e das Tabelas Principais
-    - [X] Tabela Cliente
-    - [X] Tabela Usuário
-    - [X] Tabela Serviços
-    - [X] Tabela Agendamento (Cliente-Serviço)
-- [X] Criação do Projeto C#
-    - [X] Janela Principal
-    - [X] Janela Cadastro
-        - [X] Aba Cliente
-        - [X] Aba Usuário
-    - [X] Janela Agendamento
+#### Menu Principal
+<video width=60% alt="Demonstração Menu Principal" src="https://user-images.githubusercontent.com/98099656/228383935-8313269d-6f62-4de2-a515-0981eda174d6.mp4"></video>
+
+***
+# Janelas do Sistema
+
+## ADMConnetion Form - Janela de Conexão com o Banco
+<img src="/program-demo/ADMConnection.jpg" alt="Imagem da Janela ADM Connection">
