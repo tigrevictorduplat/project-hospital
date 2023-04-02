@@ -41,10 +41,15 @@ namespace project_hospital
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
+        #region Connection
         public void setConnection( MySqlConnection con)
         {
             this.connection = con;
         }
+        public MySqlConnection getConnection() {
+            return this.connection;
+        }
+        #endregion
         private void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
@@ -110,7 +115,10 @@ namespace project_hospital
         }
         private void btnUserRegister_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new RegisterUserForm());
+            RegisterUserForm registerForm = new RegisterUserForm();
+            OpenChildForm(registerForm);
+            registerForm.setConnection(connection);
+
            
         }
         #endregion
