@@ -129,6 +129,7 @@
             this.btnCheckEqual.Text = "Verificar";
             this.btnCheckEqual.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCheckEqual.UseVisualStyleBackColor = true;
+            this.btnCheckEqual.Click += new System.EventHandler(this.btnCheckEqual_Click);
             // 
             // btnAddUser
             // 

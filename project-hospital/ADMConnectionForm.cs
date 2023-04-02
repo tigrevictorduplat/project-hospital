@@ -15,7 +15,6 @@ namespace project_hospital
 {
     public partial class ADMConnectionForm : Form
     {
-        Thread th;
         MySqlConnection connection;
         public ADMConnectionForm()
         {
