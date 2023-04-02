@@ -71,3 +71,6 @@ Descrição Serviço | VARCHAR(45) | ---
 
 ## ADMConnetion Form - Janela de Conexão com o Banco
 <img src="/program-demo/ADMConnection.jpg" alt="Imagem da Janela ADM Connection">
+Janela responsável por receber as credênciais de conexão com o Banco de Dados, que é passado adiante através de métodos como `setConnection()`. Com um Design que conversa com a proposta de todo o projeto, esse é o primeiro contato do usuário com a interface.
+
+## Main Form - Janela Principal
