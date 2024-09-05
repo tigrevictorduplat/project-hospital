@@ -1,7 +1,7 @@
 # Projeto Hospital
  ## Sumário
  - [**Objetivo**](/README(pt-br).md/#objetivo)
- - [**Descrição**](/README(pt-br).md/#descrição)
+ - [**Descrição**](/README(pt-br).md/#descrição-%EF%B8%8F)
  - [**Demonstrações**](/README(pt-br).md/#demonstração-do-programa)
  - [**Janelas do Sistema**](/README(pt-br).md/#janelas-do-sistema)
   ***
